@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "fontLogo";
+    src: url('/public/_fonts/bubblegum-sans-regular.otf');
+}
+
 :root{
     --primary-color: #dddddd;
 }
@@ -20,14 +25,34 @@ p {
     padding: 10px;
 }
 
-#page-index header.head {
+#page-index header.head {   
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("/public/_images/glass-logo-peq.jpg") no-repeat 0px 80px;
+    margin-left: 8px;
+}
 
+#page-index header.head h1 {
+    font-family: 'fontLogo', Arial;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#page-index header.head h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 #page-index header img#icon{
     position: absolute;
     left: 82%;
-    top: 13%;
+    top: 11%;
 }
 
 #page-index nav.menu {
@@ -72,6 +97,14 @@ p {
     color: white;
 }
 
+#page-index section.content{
+    display: block;
+    width: 57%;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
 #page-index figure.photo-subtitle {
     border: 8px solid white; /*largura, tipo, cor*/
     box-shadow: 1px 1px 4px black; /* deslocamento horizontal, vertical, espalhamento e cor*/
@@ -99,4 +132,19 @@ p {
 
 #page-index figure.photo-subtitle:hover figcaption {
     opacity: 1;
+}
+
+#page-index aside.second-content{
+    display: block;
+    width: 40%;
+    float: right;
+}
+
+#page-index footer {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+#page-index footer p {
+    text-align: center;
 }

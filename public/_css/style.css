@@ -17,7 +17,16 @@ p {
     text-indent: 50px;
 }
 
-#page-index {
+a {
+    text-decoration: none;
+    color: #606060;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#page-body {
     width: 90%;
     background-color: #ffffff;
     margin: -20px auto 0px auto;
@@ -25,14 +34,14 @@ p {
     padding: 10px;
 }
 
-#page-index header.head {   
+#page-body header.head {   
     border-bottom: 1px #606060 solid;
     height: 150px;
     background: url("/public/_images/glass-logo-peq.jpg") no-repeat 0px 80px;
     margin-left: 8px;
 }
 
-#page-index header.head h1 {
+#page-body header.head h1 {
     font-family: 'fontLogo', Arial;
     font-size: 30pt;
     color: #606060;
@@ -41,7 +50,7 @@ p {
     margin-bottom: 0px;
 }
 
-#page-index header.head h2 {
+#page-body header.head h2 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 15pt;
     color: #888888;
@@ -49,21 +58,21 @@ p {
     margin-top: 0px;
 }
 
-#page-index header img#icon{
+#page-body header img#icon{
     position: absolute;
     left: 82%;
     top: 11%;
 }
 
-#page-index nav.menu {
+#page-body nav.menu {
     display: block;
 }
 
-#page-index nav.menu h1 {
+#page-body nav.menu h1 {
     display: none;
 }
 
-#page-index nav.menu ul {
+#page-body nav.menu ul {
     list-style: none;
     text-transform: uppercase;
     position: absolute; /*pode ser posicionada em qualquer lugar do site, a relative é apenas dentro do conteiner*/
@@ -71,7 +80,7 @@ p {
     left: 47%;    
 }
 
-#page-index nav.menu li {
+#page-body nav.menu li {
     display: inline-block;
     background-color: var(--primary-color);
     padding: 10px;
@@ -84,67 +93,24 @@ p {
     -o-transition: background-color 1s;
 }
 
-#page-index nav.menu li:hover {
+#page-body nav.menu li:hover {
     background-color: #606060;
 }
 
-#page-index nav.menu a {
+#page-body nav.menu a {
     text-decoration: none;
     color: black;
 }
 
-#page-index nav.menu a:hover {
+#page-body nav.menu a:hover {
     color: white;
 }
 
-#page-index section.content{
-    display: block;
-    width: 57%;
-    float: left;
-    border-right: 1px solid #606060;
-    padding-right: 15px;
-}
-
-#page-index figure.photo-subtitle {
-    border: 8px solid white; /*largura, tipo, cor*/
-    box-shadow: 1px 1px 4px black; /* deslocamento horizontal, vertical, espalhamento e cor*/
-    position: relative;
-    width: 40%;
-}
-
-#page-index figure.photo-subtitle img {
-    width: 100%;
-    height: 100%;
-}
-
-#page-index figure.photo-subtitle figcaption {
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box; /*Cria um box dentro da borda*/
-    transition: opacity 1s;
-}
-
-#page-index figure.photo-subtitle:hover figcaption {
-    opacity: 1;
-}
-
-#page-index aside.second-content{
-    display: block;
-    width: 40%;
-    float: right;
-}
-
-#page-index footer {
+#page-body footer {
     clear: both;
     border-top: 1px solid #606060;
 }
 
-#page-index footer p {
+#page-body footer p {
     text-align: center;
 }

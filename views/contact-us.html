@@ -1,14 +1,49 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/public/_css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+        <title>Home</title>
+    </head>
 
-[AQUI ENTRA UMA FOTO]
+    <body>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+        <div id="page-body">
+
+            <header class="head">
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+
+                <img id="icon" src="/public/_images/glass-oculos-preto-peq.png" alt="imagem do óculos">
+
+                <nav class="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="changePhoto('/public/_images/home.png')" onmouseout="changePhoto('/public/_images/glass-oculos-preto-peq.png')">
+                        <a href="index.html">Home</a></li>
+
+                        <li onmouseover="changePhoto('/public/_images/especificacoes.png')" onmouseout="changePhoto('/public/_images/contato.png')">
+                        <a href="specs.html">Especificações</a></li>
+
+                        <li onmouseover="changePhoto('/public/_images/fotos.png')" onmouseout="changePhoto('/public/_images/contato.png')">
+                        <a href="photo.html">Fotos</a></li>
+
+                        <li onmouseover="changePhoto('/public/_images/multimidia.png')" onmouseout="changePhoto('/public/_images/contato.png')">
+                        <a href="multimedia.html">Multimídia</a></li>
+                        
+                        <li onmouseover="changePhoto('/public/_images/contato.png')" onmouseout="changePhoto('/public/_images/contato.png')">
+                        <a href="contact-us.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            </footer>
+            <script src="/public/_scripts/funcoes.js"></script>
+        </div>
+    </body>
+</html>
 
 Fale Conosco > Contato
 Formulário de Contato
@@ -42,6 +77,3 @@ Quero um Google Glass
 
 
 [BOTÃO ENVIAR]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter

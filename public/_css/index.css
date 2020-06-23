@@ -1,1 +1,248 @@
+@font-face{
+    font-family: "fontLogo";
+    src: url('/public/_fonts/bubblegum-sans-regular.otf');
+}
 
+:root{
+    --primary-color: #dddddd;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: rgba(0, 0, 0, 1);
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #606060;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#page-index {
+    width: 90%;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#page-index header.head {   
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("/public/_images/glass-logo-peq.jpg") no-repeat 0px 80px;
+    margin-left: 8px;
+}
+
+#page-index header.head h1 {
+    font-family: 'fontLogo', Arial;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#page-index header.head h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#page-index header img#icon{
+    position: absolute;
+    left: 82%;
+    top: 11%;
+}
+
+#page-index nav.menu {
+    display: block;
+}
+
+#page-index nav.menu h1 {
+    display: none;
+}
+
+#page-index nav.menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; /*pode ser posicionada em qualquer lugar do site, a relative é apenas dentro do conteiner*/
+    top: 0;
+    left: 47%;    
+}
+
+#page-index nav.menu li {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin: 2px;    
+    border-radius: 8px;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+#page-index nav.menu li:hover {
+    background-color: #606060;
+}
+
+#page-index nav.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#page-index nav.menu a:hover {
+    color: white;
+}
+
+#page-index section.content{
+    display: block;
+    width: 55%;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+#page-index article.main-news h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+#page-index header.article-header h1 {
+    font-family: 'fontLogo', Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#page-index header.article-header h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+}
+
+#page-index header.article-header h3 {
+    font-size: 12pt;
+    color: #606060;
+}
+
+#page-index header.article-header h3.update {
+    text-align: right;
+}
+
+#page-index figure.photo-subtitle {
+    border: 8px solid white; /*largura, tipo, cor*/
+    box-shadow: 1px 1px 4px black; /* deslocamento horizontal, vertical, espalhamento e cor*/
+    position: relative;
+    width: 40%;
+}
+
+#page-index figure.photo-subtitle img {
+    width: 100%;
+    height: 100%;
+}
+
+#page-index figure.photo-subtitle figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /*Cria um box dentro da borda*/
+    transition: opacity 1s;
+}
+
+#page-index figure.photo-subtitle:hover figcaption {
+    opacity: 1;
+}
+
+#page-index table {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page-index table caption {
+    color: #888888;
+    font-size: 13 pt;
+    font-weight: bold;
+}
+
+#page-index table span {
+     display: block;
+     font-size: 9pt;
+     color: #000000;
+     float: right;
+     margin-top: 10px;
+}
+
+#page-index table td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#page-index table td.col-left {
+    background-color: #606060;
+    color: #ffffff;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+#page-index table td.col-right {
+    background-color: #cecece ;
+}
+
+
+#page-index aside.second-content {
+    display: block;
+    width: 40%;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#page-index aside.second-content h1 {
+    font-family: 'fontLogo', Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+#page-index aside.second-content h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#page-index footer {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+#page-index footer p {
+    text-align: center;
+}

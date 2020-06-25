@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/public/_css/style.css">
+        <link rel="stylesheet" href="/public/_css/contact-us.css">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
         <title>Home</title>
     </head>
@@ -38,7 +39,124 @@
                     </ul>
                 </nav>
             </header>
+
+            <section id="body-full">
+                <article class="main-news">
+                    <header class="article-header">
+                        <h3>Fale Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>por Ruth Maria</h2>
+                        <h3  class="update">Atualizado em 01/Maio/2013</h3>
+                    </header> 
+                    
+                    <form action="mailto:ruthmariia01@gmail.com" method="post" id="contacts">
+                        <fieldset class="user">
+                           <legend> Identificação do Usuário </legend>
+                                <p>
+                                    <label for="name">Nome</label>
+                                    <input type="text" name="name" id="name" size="20" maxlength="30" placeholder="Nome completo">
+                                </p>
+                                <p>
+                                    <label for="password"> Senha </label>
+                                    <input type="password" name="password" id="password" size="8" maxlength="8" placeholder="Senha">
+                                </p>
+                                <p>
+                                    <label for="email"> Email </label>
+                                    <input type="email" name="email" id="email" size="20" maxlength="40" placeholder="nome@mail.com">
+                                </p>
+                                
+                                <fieldset>
+                                    <legend> Sexo </legend>
+                                        <input type="radio" name="sex" id="male"> 
+                                        <label for="male">Masculino</label><br>
+
+                                        <input type="radio" name="sex" id="female"  checked> 
+                                        <label for="female"> Feminino </label>
+                                </fieldset class="sex">
+                                <p> 
+                                    <label for="dateBirth">Data de Nascimento </label>
+                                    <input type="date" name="dateBirth" id="dateBirth">
+                                </p>
+                        </fieldset>
+                        
+                        <fieldset class="adress">
+                            <legend> Endereço do Usuário </legend>
+                                <p>
+                                    <label for="street"> Logradouro </label>
+                                    <input type="text" name="street" id="street" size="13" maxlength="80" placeholder="rua, avenida, travessa, ...">
+                                </p>
+                                <p>
+                                    <label for="number"> Número </label>
+                                    <input type="number" name="number" id="number" min="0" max="99999" placeholder="número">
+                                </p>
+                                <p>
+                                    <label for="state"> Estado </label>
+                                    <select name="tState" id="state">
+                                        <optgroup label="Região sudeste">
+                                            <option value="RJ"> Rio de Janeiro</option>    
+                                            <option value="SP"> Sâo Paulo </option>
+                                            <option value="MG"> Minas Gerais </option>
+                                        </optgroup>
+
+                                        <optgroup label="Região Nordeste">
+                                            <option value="CE"> Ceará</option>
+                                            <option value="AL" selected> Alagoas </option>
+                                        </optgroup>
+
+                                        <optgroup label="Região Sul">
+                                            <option value="SC"> Santa Catarina </option>
+                                            <option value="PA"> Paraná </option>
+                                            <option value="RG"> Rio Grande do Sul </option>
+                                        </optgroup>
+                                    </select>
+                                </p>
+                                <p>                                    
+                                    <label for="city"> Cidade </label>
+                                    <input type="text" name="city" id="city" size="20" maxlength="40" placeholder="Cidade" list="cities">
+                                    <datalist id="cities">
+                                        <option value="Rio de Janeiro"></option>
+                                        <option value="Nova Iguaçu"></option>
+                                        <option value="Niterói"></option>
+                                        <option value="Belford Roxo"></option>
+
+
+                                    </datalist>
+                                </p>
     
+                        </fieldset>
+                        
+                        <fieldset class="message">
+                           <legend> Mensagem do Usuário </legend>
+                           <p>
+                               <label for="degreeUrgency"> Grau de Urgência </label>
+                           </p>
+                           <p>
+                               <label for="tmessage"> Mensagem </label>
+                           </p>
+                        </fieldset>
+                        
+                        <fieldset class="request">
+                        	<legend> Quero um Google Glass </legend>
+                            <p>
+                                <label for="tResquest"> Gostaria de adquirir um Google Glass quando disponível </label>
+                            </p>
+                            <p>
+                                <label for="color"> Cor </label>
+                            </p>
+                            <p>
+                                <label for="amount"> Quantidade </label>
+                            </p>
+                            <p>
+                                <label for="totalPrice">Preço Total: R\$</label>  
+                            </p>                  
+                        </fieldset>
+                        
+                        
+                        [BOTÃO ENVIAR]
+                    </form>
+                </article>
+            </section>
+
             <footer>
                 <p>
                     &copy; Copyright 2020 - by Ruth Maria <br>
@@ -51,35 +169,4 @@
     </body>
 </html>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]

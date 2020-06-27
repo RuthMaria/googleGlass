@@ -1,0 +1,27 @@
+#page-body header.article-header h1 {
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+#page-body .main-news .tv-radio {
+   width: 900px;
+   height: 580px;
+   margin: auto;
+   background-image: url("/public/_images/radio-tv.png");
+}   
+
+#page-body .tv-radio audio.music {
+   display: block;
+   position: relative;
+   width: 300px;
+   left: 575px;
+   top: 490px;
+}
+
+#page-body .tv-radio video.film {
+   display: block;
+   position: relative;
+   width: 440px;
+   left: 88px;
+   top: 62px;
+}

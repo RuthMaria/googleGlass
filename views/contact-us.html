@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/public/_css/style.css">
-        <link rel="stylesheet" href="/public/_css/contact-us.css">
+        <link rel="stylesheet" href="/public/_styles/general.css">
+        <link rel="stylesheet" href="/public/_styles/contact-us.css">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
         <title>Home</title>
+         
     </head>
 
     <body>
@@ -45,34 +46,32 @@
                     <header class="article-header">
                         <h3>Fale Conosco > Contato</h3>
                         <h1>Formulário de Contato</h1>
-                        <h2>por Ruth Maria</h2>
-                        <h3  class="update">Atualizado em 01/Maio/2013</h3>
                     </header> 
                     
-                    <form action="mailto:ruthmariia01@gmail.com" method="post" id="contacts">
+                    <form action="mailto:ruthmariia01@gmail.com" method="post" id="contacts"  oninput="totalPrice()">
                         <fieldset class="user">
                            <legend> Identificação do Usuário </legend>
                                 <p>
                                     <label for="name">Nome</label>
-                                    <input type="text" name="name" id="name" size="20" maxlength="30" placeholder="Nome completo">
+                                    <input type="text" name="name" id="name" size="27" maxlength="40" placeholder="Nome completo">
                                 </p>
                                 <p>
                                     <label for="password"> Senha </label>
-                                    <input type="password" name="password" id="password" size="8" maxlength="8" placeholder="Senha">
+                                    <input type="password" name="password" id="password" size="14" maxlength="8" placeholder="Senha">
                                 </p>
                                 <p>
                                     <label for="email"> Email </label>
-                                    <input type="email" name="email" id="email" size="20" maxlength="40" placeholder="nome@mail.com">
+                                    <input type="email" name="email" id="email" size="27" maxlength="40" placeholder="nome@mail.com">
                                 </p>
                                 
-                                <fieldset>
+                                <fieldset class="sex">
                                     <legend> Sexo </legend>
-                                        <input type="radio" name="sex" id="male"> 
+                                        <input type="radio" name="male" id="male"> 
                                         <label for="male">Masculino</label><br>
 
-                                        <input type="radio" name="sex" id="female"  checked> 
+                                        <input type="radio" name="female" id="female"  checked> 
                                         <label for="female"> Feminino </label>
-                                </fieldset class="sex">
+                                </fieldset>
                                 <p> 
                                     <label for="dateBirth">Data de Nascimento </label>
                                     <input type="date" name="dateBirth" id="dateBirth">
@@ -83,44 +82,25 @@
                             <legend> Endereço do Usuário </legend>
                                 <p>
                                     <label for="street"> Logradouro </label>
-                                    <input type="text" name="street" id="street" size="13" maxlength="80" placeholder="rua, avenida, travessa, ...">
+                                    <input type="text" name="street" id="street" size="22" maxlength="80" placeholder="rua, avenida, travessa, ...">
                                 </p>
                                 <p>
                                     <label for="number"> Número </label>
                                     <input type="number" name="number" id="number" min="0" max="99999" placeholder="número">
                                 </p>
                                 <p>
-                                    <label for="state"> Estado </label>
-                                    <select name="tState" id="state">
-                                        <optgroup label="Região sudeste">
-                                            <option value="RJ"> Rio de Janeiro</option>    
-                                            <option value="SP"> Sâo Paulo </option>
-                                            <option value="MG"> Minas Gerais </option>
-                                        </optgroup>
-
-                                        <optgroup label="Região Nordeste">
-                                            <option value="CE"> Ceará</option>
-                                            <option value="AL" selected> Alagoas </option>
-                                        </optgroup>
-
-                                        <optgroup label="Região Sul">
-                                            <option value="SC"> Santa Catarina </option>
-                                            <option value="PA"> Paraná </option>
-                                            <option value="RG"> Rio Grande do Sul </option>
-                                        </optgroup>
+                                    <label for="uf"> Estado </label>
+                                    <select name="uf" id="uf">
+                                         <option value=""> Selecione o estado... </option>
+                                       
+                                        <input type="hidden" name="state">
                                     </select>
                                 </p>
                                 <p>                                    
                                     <label for="city"> Cidade </label>
-                                    <input type="text" name="city" id="city" size="20" maxlength="40" placeholder="Cidade" list="cities">
-                                    <datalist id="cities">
-                                        <option value="Rio de Janeiro"></option>
-                                        <option value="Nova Iguaçu"></option>
-                                        <option value="Niterói"></option>
-                                        <option value="Belford Roxo"></option>
-
-
-                                    </datalist>
+                                    <select name="cities"  disabled="disabled" id="cities">
+                                         <option value=""> Selecione a cidade... </option>
+                                    </select>
                                 </p>
     
                         </fieldset>
@@ -129,30 +109,36 @@
                            <legend> Mensagem do Usuário </legend>
                            <p>
                                <label for="degreeUrgency"> Grau de Urgência </label>
+                               <input type="range" name="degreeUrgency" id="degreeUrgency" min="0" max="10" step="2">
                            </p>
                            <p>
                                <label for="tmessage"> Mensagem </label>
+                               <textarea name="tmessage" id="tmessage" cols="40" rows="5" placeholder="Deixe aqui sua mensagem...">
+                               </textarea>
                            </p>
                         </fieldset>
                         
                         <fieldset class="request">
                         	<legend> Quero um Google Glass </legend>
                             <p>
+                                <input type="checkbox" name="request" id="request" checked>
                                 <label for="tResquest"> Gostaria de adquirir um Google Glass quando disponível </label>
                             </p>
                             <p>
                                 <label for="color"> Cor </label>
+                                <input type="color" name="color" id="color" value="#0000FF">
                             </p>
                             <p>
                                 <label for="amount"> Quantidade </label>
+                                <input type="number" name="tamount" id="amount" min="0" max="5" value="0">
                             </p>
                             <p>
-                                <label for="totalPrice">Preço Total: R\$</label>  
+                                <label for="price">Preço Total: R\$</label>  
+                                <input type="text" name="price" id="price" placeholder="Total a pagar">
                             </p>                  
                         </fieldset>
-                        
-                        
-                        [BOTÃO ENVIAR]
+                    
+                        <input type="image" src="/public/_images/botao-enviar.png" alt="Botão enviar" id="enviar">
                     </form>
                 </article>
             </section>
@@ -165,6 +151,7 @@
                 </p>
             </footer>
             <script src="/public/_scripts/funcoes.js"></script>
+            <script src="/public/_scripts/contact-us.js"></script>
         </div>
     </body>
 </html>

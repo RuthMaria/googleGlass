@@ -1,5 +1,5 @@
 
-<h2 align="center"> :sunglasses: Google glass </h2><br>
+<h2 align="center"> :eyeglasses: Google glass </h2><br>
 
 ## :books: About
 <p align="justify">
@@ -36,6 +36,7 @@ In the contact us was used the IBGE API to find the states and cities. </p>
 * ### Contact us
 ![Login](https://github.com/RuthMaria/googleGlass/blob/master/public/_screens/contact-us.png) 
 
+<br>
 
 ## :computer: Technologies Used
  * HTML
@@ -44,6 +45,11 @@ In the contact us was used the IBGE API to find the states and cities. </p>
  
 <br>
 
+## :anchor: Acess the site
+
+Access the site by clicking [here](https://ruthmaria.github.io/googleGlass/)
+
+<br>
 
  ## :earth_americas: API used
  * IBGE API to find the [states](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-UFs-estadosGet)

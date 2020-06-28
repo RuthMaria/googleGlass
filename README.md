@@ -45,9 +45,9 @@ In the contact us was used the IBGE API to find the states and cities. </p>
  
 <br>
 
-## :anchor: Acess the site
+## :anchor: View project execution
 
-Access the site by clicking [here](https://ruthmaria.github.io/googleGlass/)
+To see the execution of the project click [here](https://youtu.be/R3D5N3-4nEU)
 
 <br>
 

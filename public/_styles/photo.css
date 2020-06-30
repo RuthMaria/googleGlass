@@ -1,68 +1,68 @@
-#page-body header.article-header h1 {
+header.article-header h1 {
     text-align: center;
     margin-bottom: 50px;
 }
 
-#page-body section#body-full ul#photos-album {
+section#body-full ul#photos-album {
     width: 700px;
     padding: 50px;
     margin: 0 auto;
     list-style: none;
 }
 
-#page-body ul#photos-album li {
+ul#photos-album li {
     float: left;
     width: 200px;
     height: 200px;
     margin: 10px;
-    border: 5px solid #ffffff;
+    border: 5px solid var(--white-color);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     background-position: 50% 50%; /*Para a imagem ficar no meio*/
     background-size: 400px 400px;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     transition: all .4s ease-in;
 }
 
-#page-body ul#photos-album li:hover {
+ul#photos-album li:hover {
     transform: scale(1.5);
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
 
-#page-body ul#photos-album li.photo01 {
+ul#photos-album li.photo01 {
     background-image: url("/public/_images//galeria-01.jpg");
 }
 
-#page-body ul#photos-album li.photo02 {
+ ul#photos-album li.photo02 {
     background-image: url("/public/_images//galeria-02.jpg");
 }
 
-#page-body ul#photos-album li.photo03 {
+ul#photos-album li.photo03 {
     background-image: url("/public/_images//galeria-03.jpg");
 }
 
-#page-body ul#photos-album li.photo04 {
+ul#photos-album li.photo04 {
     background-image: url("/public/_images//galeria-04.jpg");
 }
 
-#page-body ul#photos-album li.photo05 {
+ul#photos-album li.photo05 {
     background-image: url("/public/_images//galeria-05.jpg");
 }
 
-#page-body ul#photos-album li.photo06 {
+ul#photos-album li.photo06 {
     background-image: url("/public/_images//galeria-06.jpg");
 }
 
-#page-body li span {
+li span {
     opacity: 0;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000000;
+    color: var(--white-color);
+    text-shadow: 1px 1px 1px var(--black-color);
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 9pt;
     line-height: 370px;
     padding: 5px;
 } 
 
-#page-body li:hover span {
+li:hover span {
     opacity: 1;
 }

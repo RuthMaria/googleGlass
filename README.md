@@ -39,8 +39,8 @@ In the contact us was used the IBGE API to find the states and cities. </p>
 <br>
 
 ## :computer: Technologies Used
- * HTML
- * CSS
+ * HTML5
+ * CSS3
  * JavaScript
  
 <br>

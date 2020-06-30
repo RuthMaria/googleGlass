@@ -18,18 +18,18 @@ input, textarea, select {
 }
 
 input:hover, textarea:hover {
-    background-color: #dddddd;
+    background-color: var(--lightGray-color);
 }
 
 legend {
-    color: #888888;
+    color: var(--mediumGray-color);
     font-weight: bold;
     font-size: 13pt;
     font-family: sans-serif;
 }
 
 fieldset {
-    border-color: #cecece;
+    border-color: var(--veryLightGray);
     margin: 20px;
 }
 

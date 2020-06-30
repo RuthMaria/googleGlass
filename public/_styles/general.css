@@ -4,11 +4,16 @@
 }
 
 :root{
-    --primary-color: #dddddd;
+    --white-color: #ffffff;
+    --darkGray-color: #606060;
+    --mediumGray-color: #888888;
+    --lightGray-color: #dddddd;
+    --veryLightGray: #cecece;
+    --black-color: #000000;
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--lightGray-color);
     color: rgba(0, 0, 0, 1);
 }
 
@@ -19,60 +24,60 @@ p {
 
 a {
     text-decoration: none;
-    color: #606060;
+    color: var(--darkGray-color);
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-#page-body {
+#interface {
     width: 90%;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     margin: -20px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
 
-#page-body header.head {   
-    border-bottom: 1px #606060 solid;
+header.head {   
+    border-bottom: 1px var(--darkGray-color) solid;
     height: 150px;
     background: url("/public/_images/glass-logo-peq.jpg") no-repeat 0px 80px;
     margin-left: 8px;
 }
 
-#page-body header.head h1 {
+header.head h1 {
     font-family: 'fontLogo', Arial;
     font-size: 30pt;
-    color: #606060;
+    color: var(--darkGray-color);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     padding: 0px;
     margin-bottom: 0px;
 }
 
-#page-body header.head h2 {
+header.head h2 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 15pt;
-    color: #888888;
+    color: var(--mediumGray-color);
     padding: 0px;
     margin-top: 0px;
 }
 
-#page-body header img#icon{
+header.head img#icon{
     position: absolute;
     left: 82%;
     top: 11%;
 }
 
-#page-body nav.menu {
+header.head nav.menu {
     display: block;
 }
 
-#page-body nav.menu h1 {
+header.head nav.menu h1 {
     display: none;
 }
 
-#page-body nav.menu ul {
+header.head nav.menu ul {
     list-style: none;
     text-transform: uppercase;
     position: absolute; /*pode ser posicionada em qualquer lugar do site, a relative é apenas dentro do conteiner*/
@@ -80,9 +85,9 @@ a:hover {
     left: 47%;    
 }
 
-#page-body nav.menu li {
+nav.menu ul li {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: var(--lightGray-color);
     padding: 10px;
     margin: 2px;    
     border-radius: 8px;
@@ -93,57 +98,49 @@ a:hover {
     -o-transition: background-color 1s;
 }
 
-#page-body nav.menu li:hover {
-    background-color: #606060;
+nav.menu ul li:hover {
+    background-color: var(--darkGray-color);
 }
 
-#page-body nav.menu a {
+nav.menu li a {
     text-decoration: none;
     color: black;
 }
 
-#page-body nav.menu a:hover {
+nav.menu li a:hover {
     color: white;
 }
 
-#page-body section.content{
-    display: block;
-    width: 55%;
-    float: left;
-    border-right: 1px solid #606060;
-    padding-right: 15px;
-}
-
-#page-body article.main-news h2 {
+article.main-news h2 {
     font-size: 13pt;
-    color: #606060;
-    background-color: #dddddd;
+    color: var(--darkGray-color);
+    background-color: var(--lightGray-color);
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
 }
 
-#page-body header.article-header h1 {
+header.article-header h1 {
     font-family: 'fontLogo', Arial, Helvetica, sans-serif;
     font-size: 20pt;
-    color: #606060;
+    color: var(--darkGray-color);
     margin-bottom: 0px;
     margin-top: 0px;
 }
 
-#page-body header.article-header h3 {
+header.article-header h3 {
     font-size: 12pt;
-    color: #606060;
+    color: var(--darkGray-color);
 }
 
-#page-body header.article-header h3.update {
+header.article-header h3.update {
     text-align: right;
 }
 
-#page-body footer {
+footer {
     clear: both;
-    border-top: 1px solid #606060;
+    border-top: 1px solid var(--darkGray-color);
 }
 
-#page-body footer p {
+footer p {
     text-align: center;
 }

@@ -1,23 +1,23 @@
-#page-body header.article-header h1 {
+header.article-header h1 {
     text-align: center;
     margin-bottom: 50px;
 }
 
-#page-body section#content {
+section#content {
     width: 1000px;
     margin: auto;
 }
 
-#page-body section#content iframe#frame-spec {
+section#content iframe#frame-spec {
     width: 400px;
     height: 280px;
     overflow-x: hidden;
 }
 
-#page-body iframe#frame-spec::-webkit-scrollbar{
+iframe#frame-spec::-webkit-scrollbar{
     display: none;
 }
 
-#page-body section#content area {
+section#content area {
     outline: 0;
 } 

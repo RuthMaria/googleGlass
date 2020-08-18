@@ -32,10 +32,6 @@ In the contact us was used the IBGE API to find the states and cities. </p>
 
 ![video](public/_screens/video.gif)
 
-Home | Specs | Photos | Multimedia | Contact us 
----|---|---|---|---
-| ![home](public/_screens/index.png) | ![study](public/_screens/specs.png) | ![favorites](public/_screens/photos.png) | ![home](public/_screens/multimedia.png) | ![study](public/_screens/contact-us.png) |
-
 <a id="technologies"></a><br>
 
 ## ⚒️ Technologies Used
